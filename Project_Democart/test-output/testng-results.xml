@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="33715" started-at="2019-11-13T20:50:22 BDT" finished-at="2019-11-13T20:50:55 BDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="33715" started-at="2019-11-13T20:50:22 BDT" finished-at="2019-11-13T20:50:55 BDT">
+      <class name="pagefactory.com.tests.PagefactoryTests_Wishlist">
+        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Wishlist@2eae8e6e]" name="BeforeTest" is-config="true" duration-ms="7991" started-at="2019-11-13T20:50:22 BDT" finished-at="2019-11-13T20:50:30 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="Verify_AddToWishlist_Before_login()[pri:1, instance:pagefactory.com.tests.PagefactoryTests_Wishlist@2eae8e6e]" name="Verify_AddToWishlist_Before_login" duration-ms="11917" started-at="2019-11-13T20:50:30 BDT" finished-at="2019-11-13T20:50:42 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_AddToWishlist_Before_login -->
+        <test-method status="PASS" signature="Verify_AddToWishlist_After_login()[pri:2, instance:pagefactory.com.tests.PagefactoryTests_Wishlist@2eae8e6e]" name="Verify_AddToWishlist_After_login" duration-ms="13654" started-at="2019-11-13T20:50:42 BDT" finished-at="2019-11-13T20:50:55 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_AddToWishlist_After_login -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Wishlist@2eae8e6e]" name="AfterTest" is-config="true" duration-ms="54" started-at="2019-11-13T20:50:55 BDT" finished-at="2019-11-13T20:50:55 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- pagefactory.com.tests.PagefactoryTests_Wishlist -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
