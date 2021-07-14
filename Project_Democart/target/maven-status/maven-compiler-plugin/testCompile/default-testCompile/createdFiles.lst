@@ -1,0 +1,8 @@
+pagefactory\com\tests\PagefactoryTests_Count_Product.class
+pagefactory\com\tests\PagefactoryTests_Wishlist.class
+pagefactory\com\tests\PagefactoryTests_OrderHistory_Transaction_Download.class
+pagefactory\com\tests\PagefactoryTests_Reg.class
+pagefactory\com\tests\PagefactoryTests_Login.class
+pagefactory\com\tests\PagefactoryTests_Search.class
+pagefactory\com\tests\PagefactoryTests_Cartlist.class
+pagefactory\com\tests\PagefactoryTests_AddCart_From_Wishlist.class

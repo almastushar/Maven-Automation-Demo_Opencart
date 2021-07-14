@@ -1,0 +1,6 @@
+pages\com\demo\opencart\CartPage.class
+pages\com\demo\opencart\HomePage.class
+pages\com\demo\opencart\RegistrationPage.class
+utils\TestData.class
+pages\com\demo\opencart\LoginPage.class
+pages\com\demo\opencart\WishlistPage.class

@@ -11,8 +11,7 @@ public class CartPage {
 		
 		public CartPage(WebDriver driver) {
 			this.driver = driver;
-			PageFactory.initElements(driver, this);
-			
+			PageFactory.initElements(driver, this);		
 		}
 		
 		@FindBy(xpath = "(//A[@href='https://demo.opencart.com/index.php?route=account/account'])[1]")
