@@ -27,7 +27,7 @@ public class PagefactoryTests_Count_Product {
 	String quantity = RandomStringUtils.randomNumeric(1, 2);
 	
 	
-	@BeforeTest
+	@BeforeSuite
 	public void BeforeTest() throws IOException {
 		testdata = new TestData();
 		driver.get(testdata.property.getProperty("baseUrl"));
@@ -85,7 +85,7 @@ public class PagefactoryTests_Count_Product {
 		
 	}
 	
-	@AfterClass
+	@AfterSuite
 	public void AfterTest() {
 		driver.close();
 	}

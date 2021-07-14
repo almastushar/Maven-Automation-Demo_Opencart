@@ -44,7 +44,7 @@ public class PagefactoryTests_Reg {
 	String blank_password = "";
 	String blank_confirmpass = "";
 	
-	@BeforeTest
+	@BeforeSuite
 	public void BeforeTest2() throws IOException {
 		testdata = new TestData();
 		driver.get(testdata.property.getProperty("baseUrl"));
@@ -363,7 +363,7 @@ public class PagefactoryTests_Reg {
 		assertEquals(regPage.verifyFailedRePassword(), "Password confirmation does not match password!");
 	}
 	
-	@AfterClass
+	@AfterSuite
 	public void AfterTest() {
 		driver.close();
 	}

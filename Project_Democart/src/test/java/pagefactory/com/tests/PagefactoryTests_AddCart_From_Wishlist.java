@@ -6,7 +6,9 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -27,7 +29,7 @@ public class PagefactoryTests_AddCart_From_Wishlist {
 	CartPage cartPage = new CartPage(driver);
 	
 	
-	@BeforeTest
+	@BeforeSuite
 	public void BeforeTest() throws IOException {
 		testdata = new TestData();
 		driver.get(testdata.property.getProperty("baseUrl"));
@@ -74,7 +76,7 @@ public class PagefactoryTests_AddCart_From_Wishlist {
 		
 	}
 	
-	@AfterClass
+	@AfterSuite
 	public void AfterTest() {
 		driver.close();
 	}

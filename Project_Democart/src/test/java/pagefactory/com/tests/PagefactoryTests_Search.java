@@ -30,7 +30,7 @@ public class PagefactoryTests_Search {
 	String invalid_search = RandomStringUtils.randomAlphabetic(8);
 	String blank_search = "";
 	
-	@BeforeTest
+	@BeforeSuite
 	public void BeforeTest() throws IOException {
 		testdata = new TestData();
 		driver.get(testdata.property.getProperty("baseUrl"));
@@ -181,7 +181,7 @@ public class PagefactoryTests_Search {
 		loginPage.Logout();
 	}
 	
-	@AfterClass
+	@AfterSuite
 	public void AfterTest() {
 		driver.close();
 	}

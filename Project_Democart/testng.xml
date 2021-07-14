@@ -13,4 +13,7 @@
       <class name="pagefactory.com.tests.PagefactoryTests_Reg"/>
     </classes>
   </test> <!-- Test -->
+  <packages>
+        <package name="com.test"/>
+    </packages>
 </suite> <!-- Suite -->

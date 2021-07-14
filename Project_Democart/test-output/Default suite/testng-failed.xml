@@ -3,13 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pagefactory.com.tests.PagefactoryTests_AddCart_From_Wishlist">
+      <class name="pagefactory.com.tests.PagefactoryTests_OrderHistory_Transaction_Download">
         <methods>
+          <include name="Verify_Download_Page"/>
+          <include name="Verify_Order_History_Page"/>
           <include name="AfterTest"/>
-          <include name="Verify_AddToCartFromWishlist_After_login"/>
+          <include name="Verify_Transaction_Page"/>
           <include name="BeforeTest"/>
         </methods>
-      </class> <!-- pagefactory.com.tests.PagefactoryTests_AddCart_From_Wishlist -->
+      </class> <!-- pagefactory.com.tests.PagefactoryTests_OrderHistory_Transaction_Download -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -26,7 +26,7 @@ public class PagefactoryTests_Wishlist {
 	WishlistPage wishPage = new WishlistPage(driver);
 	
 	
-	@BeforeTest
+	@BeforeSuite
 	public void BeforeTest() throws IOException {
 		testdata = new TestData();
 		driver.get(testdata.property.getProperty("baseUrl"));
@@ -67,7 +67,7 @@ public class PagefactoryTests_Wishlist {
 		
 	}
 	
-	@AfterClass
+	@AfterSuite
 	public void AfterTest() {
 		driver.close();
 	}

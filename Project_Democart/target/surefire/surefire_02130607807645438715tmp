@@ -1,0 +1,6 @@
+#surefire_0
+#Thu Jul 15 02:07:58 BDT 2021
+testNGXMLFile=src\\test\\resources\\testng.xml
+user.dir=C\:\\Users\\User\\Documents\\GitHub\\Maven-Automation-Demo_Opencart\\Project_Democart
+localRepository=C\:\\Users\\User\\.m2\\repository
+basedir=C\:\\Users\\User\\Documents\\GitHub\\Maven-Automation-Demo_Opencart\\Project_Democart
