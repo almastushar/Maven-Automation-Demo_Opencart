@@ -48,13 +48,13 @@ public class HomePage {
 		@FindBy(xpath = "(//I[@class='fa fa-heart'])[3]")
 		WebElement AddToWishListButton;
 		
-		@FindBy(xpath = "(//I[@class='fa fa-heart'])[1]")
+		@FindBy(css = "#wishlist-total > i")
 		WebElement WishListButton;
 		
 		@FindBy(css = "#content > div.row > div:nth-child(1) > div > div.button-group > button:nth-child(1) > i")
 		WebElement AddToCartButton;
 		
-		@FindBy(linkText = "Shopping Cart")
+		@FindBy(css = "#cart > button > i")
 		WebElement CartListButton;
 		
 		public void Registration() {
