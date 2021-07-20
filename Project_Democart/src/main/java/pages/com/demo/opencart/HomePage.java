@@ -18,13 +18,13 @@ public class HomePage {
 			
 		}
 		
-		@FindBy(linkText = "My Account")
+		@FindBy(css = "#top-links > ul > li.dropdown > a > i")
 		WebElement MyAccountButton;
 		
 		@FindBy(linkText = "Register" )
 		WebElement RegisterButton;
 		
-		@FindBy(linkText = "Login")
+		@FindBy(css = "#top-links > ul > li.dropdown.open > ul > li:nth-child(2) > a")
 		WebElement LoginButton;
 		
 		@FindBy(linkText = "Order History")
@@ -54,7 +54,7 @@ public class HomePage {
 		@FindBy(css = "#content > div.row > div:nth-child(1) > div > div.button-group > button:nth-child(1) > i")
 		WebElement AddToCartButton;
 		
-		@FindBy(css = "#cart > button > i")
+		@FindBy(css = "#top-links > ul > li:nth-child(4) > a > i")
 		WebElement CartListButton;
 		
 		public void Registration() {

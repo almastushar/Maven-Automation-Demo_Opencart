@@ -20,7 +20,7 @@ public class CartPage {
 		@FindBy(xpath = "//A[@href='https://demo.opencart.com/index.php?route=account/login'][text()='Login']")
 		WebElement LoginButton;
 		
-		@FindBy(xpath = "(//TABLE[@class='table table-bordered'])[2]")
+		@FindBy(css = "#cart > ul")
 		WebElement CartListTable;
 		
 		@FindBy(xpath = "//I[@class='fa fa-times-circle']")
