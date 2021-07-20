@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
@@ -20,8 +21,19 @@ import pages.com.demo.opencart.WishlistPage;
 import utils.TestData;
 
 public class PagefactoryTests_AddCart_From_Wishlist {
-	
+	static ChromeOptions options = new ChromeOptions().addArguments("enable-automation --headless ");
 	WebDriver driver = new ChromeDriver(); 
+	/*
+	 * ChromeOptions options = new ChromeOptions();
+	 * options.addArguments("enable-automation");
+	 * options.addArguments("--headless");
+	 * options.addArguments("--window-size=1920,1080");
+	 * options.addArguments("--no-sandbox");
+	 * options.addArguments("--disable-extensions");
+	 * options.addArguments("--dns-prefetch-disable");
+	 * options.addArguments("--disable-gpu");
+	 * options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+	 */
 	static TestData testdata;
 	
 	HomePage homePage = new HomePage(driver);
