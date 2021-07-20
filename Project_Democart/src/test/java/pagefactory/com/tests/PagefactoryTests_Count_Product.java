@@ -27,12 +27,13 @@ public class PagefactoryTests_Count_Product {
 	String quantity = RandomStringUtils.randomNumeric(1, 2);
 	
 	
-	@BeforeSuite
+	@BeforeClass
 	public void BeforeTest() throws IOException {
 		testdata = new TestData();
 		driver.get(testdata.property.getProperty("baseUrl"));
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
+		System.out.println("Start Count Product");
 		
 	}
 	
@@ -55,7 +56,6 @@ public class PagefactoryTests_Count_Product {
 				"×");
 		assertEquals(cartPage.Verify_Count(), quantity);
 		cartPage.Delete_Cartlist();
-		
 		loginPage.Logout();
 		
 	}
@@ -85,7 +85,7 @@ public class PagefactoryTests_Count_Product {
 		
 	}
 	
-	@AfterSuite
+	@AfterClass
 	public void AfterTest() {
 		driver.close();
 	}

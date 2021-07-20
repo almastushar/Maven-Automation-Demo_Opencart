@@ -28,12 +28,13 @@ public class PagefactoryTests_Login {
 	String invalid_pass = RandomStringUtils.randomAlphabetic(8);
 	String Blank_pass = "";
 	
-	@BeforeSuite
+	@BeforeClass
 	public void BeforeTest() throws IOException {
 		testdata = new TestData();
 		driver.get(testdata.property.getProperty("baseUrl"));
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
+		System.out.println("Start Login");
 		
 	}
 	
@@ -67,7 +68,7 @@ public class PagefactoryTests_Login {
 		assertEquals(loginPage.Verify_Failed_Login(), "Warning: No match for E-Mail Address and/or Password.");
 	}
 	
-	@AfterSuite
+	@AfterClass
 	public void AfterTest() {
 		driver.close();
 	}

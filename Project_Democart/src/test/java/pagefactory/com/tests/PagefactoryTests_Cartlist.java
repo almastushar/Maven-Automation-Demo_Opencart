@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -27,12 +28,13 @@ public class PagefactoryTests_Cartlist {
 	CartPage cartPage = new CartPage(driver);
 	
 	
-	@BeforeSuite
+	@BeforeClass
 	public void BeforeTest() throws IOException {
 		testdata = new TestData();
 		driver.get(testdata.property.getProperty("baseUrl"));
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
+		System.out.println("Start Cartlist");
 		
 	}
 	
@@ -73,7 +75,7 @@ public class PagefactoryTests_Cartlist {
 		
 	}
 	
-	@AfterSuite
+	@AfterClass
 	public void AfterTest() {
 		driver.close();
 	}

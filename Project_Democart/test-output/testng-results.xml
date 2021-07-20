@@ -1,29 +1,247 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="39" passed="39">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19918" started-at="2021-07-20T23:06:09 BDT" finished-at="2021-07-20T23:06:29 BDT">
+  <suite name="Suite" duration-ms="254602" started-at="2021-07-20T23:20:56 BDT" finished-at="2021-07-20T23:25:10 BDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19918" started-at="2021-07-20T23:06:09 BDT" finished-at="2021-07-20T23:06:29 BDT">
-      <class name="pagefactory.com.tests.PagefactoryTests_AddCart_From_Wishlist">
-        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_AddCart_From_Wishlist@1b266842]" name="BeforeTest" is-config="true" duration-ms="1798" started-at="2021-07-20T23:06:08 BDT" finished-at="2021-07-20T23:06:09 BDT">
+    <test name="Test" duration-ms="254602" started-at="2021-07-20T23:20:56 BDT" finished-at="2021-07-20T23:25:10 BDT">
+      <class name="pagefactory.com.tests.PagefactoryTests_Cartlist">
+        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Cartlist@54a67a45]" name="BeforeTest" is-config="true" duration-ms="2286" started-at="2021-07-20T23:20:42 BDT" finished-at="2021-07-20T23:20:44 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="Verify_AddToCartFromWishlist_Before_login()[pri:1, instance:pagefactory.com.tests.PagefactoryTests_AddCart_From_Wishlist@1b266842]" name="Verify_AddToCartFromWishlist_Before_login" duration-ms="8843" started-at="2021-07-20T23:06:09 BDT" finished-at="2021-07-20T23:06:18 BDT">
+        <test-method status="PASS" signature="Verify_AddToCartlist_Before_login_and_Check_Existing_Of_Cartlist_After_Login()[pri:1, instance:pagefactory.com.tests.PagefactoryTests_Cartlist@54a67a45]" name="Verify_AddToCartlist_Before_login_and_Check_Existing_Of_Cartlist_After_Login" duration-ms="9002" started-at="2021-07-20T23:21:18 BDT" finished-at="2021-07-20T23:21:27 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_AddToCartlist_Before_login_and_Check_Existing_Of_Cartlist_After_Login -->
+        <test-method status="PASS" signature="Verify_AddToCartlist_After_login()[pri:2, instance:pagefactory.com.tests.PagefactoryTests_Cartlist@54a67a45]" name="Verify_AddToCartlist_After_login" duration-ms="8939" started-at="2021-07-20T23:21:27 BDT" finished-at="2021-07-20T23:21:36 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_AddToCartlist_After_login -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Cartlist@54a67a45]" name="AfterTest" is-config="true" duration-ms="56" started-at="2021-07-20T23:25:10 BDT" finished-at="2021-07-20T23:25:10 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- pagefactory.com.tests.PagefactoryTests_Cartlist -->
+      <class name="pagefactory.com.tests.PagefactoryTests_Search">
+        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Search@522a32b1]" name="BeforeTest" is-config="true" duration-ms="1769" started-at="2021-07-20T23:20:52 BDT" finished-at="2021-07-20T23:20:54 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="search_blank_value_with_login()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Search@522a32b1]" name="search_blank_value_with_login" duration-ms="17600" started-at="2021-07-20T23:22:20 BDT" finished-at="2021-07-20T23:22:37 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_blank_value_with_login -->
+        <test-method status="PASS" signature="search_blank_value_without_login()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Search@522a32b1]" name="search_blank_value_without_login" duration-ms="11458" started-at="2021-07-20T23:22:37 BDT" finished-at="2021-07-20T23:22:49 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_blank_value_without_login -->
+        <test-method status="PASS" signature="search_invalid_value_with_login()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Search@522a32b1]" name="search_invalid_value_with_login" duration-ms="17646" started-at="2021-07-20T23:22:49 BDT" finished-at="2021-07-20T23:23:07 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_invalid_value_with_login -->
+        <test-method status="PASS" signature="search_invalid_value_without_login()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Search@522a32b1]" name="search_invalid_value_without_login" duration-ms="11414" started-at="2021-07-20T23:23:07 BDT" finished-at="2021-07-20T23:23:18 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_invalid_value_without_login -->
+        <test-method status="PASS" signature="search_valid_value_with_login()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Search@522a32b1]" name="search_valid_value_with_login" duration-ms="7635" started-at="2021-07-20T23:23:18 BDT" finished-at="2021-07-20T23:23:26 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_valid_value_with_login -->
+        <test-method status="PASS" signature="search_valid_value_without_login()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Search@522a32b1]" name="search_valid_value_without_login" duration-ms="1457" started-at="2021-07-20T23:23:26 BDT" finished-at="2021-07-20T23:23:27 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_valid_value_without_login -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Search@522a32b1]" name="AfterTest" is-config="true" duration-ms="52" started-at="2021-07-20T23:25:10 BDT" finished-at="2021-07-20T23:25:11 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- pagefactory.com.tests.PagefactoryTests_Search -->
+      <class name="pagefactory.com.tests.PagefactoryTests_Login">
+        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Login@35390ee3]" name="BeforeTest" is-config="true" duration-ms="1823" started-at="2021-07-20T23:20:46 BDT" finished-at="2021-07-20T23:20:48 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="login_negative_all_invalid_value()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Login@35390ee3]" name="login_negative_all_invalid_value" duration-ms="3180" started-at="2021-07-20T23:23:27 BDT" finished-at="2021-07-20T23:23:30 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_negative_all_invalid_value -->
+        <test-method status="PASS" signature="login_negative_blank_value()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Login@35390ee3]" name="login_negative_blank_value" duration-ms="2935" started-at="2021-07-20T23:23:30 BDT" finished-at="2021-07-20T23:23:33 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_negative_blank_value -->
+        <test-method status="PASS" signature="login_positive_all_valid_value()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Login@35390ee3]" name="login_positive_all_valid_value" duration-ms="6218" started-at="2021-07-20T23:23:33 BDT" finished-at="2021-07-20T23:23:39 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_positive_all_valid_value -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Login@35390ee3]" name="AfterTest" is-config="true" duration-ms="58" started-at="2021-07-20T23:25:10 BDT" finished-at="2021-07-20T23:25:10 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- pagefactory.com.tests.PagefactoryTests_Login -->
+      <class name="pagefactory.com.tests.PagefactoryTests_OrderHistory_Transaction_Download">
+        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_OrderHistory_Transaction_Download@2e554a3b]" name="BeforeTest" is-config="true" duration-ms="1982" started-at="2021-07-20T23:20:48 BDT" finished-at="2021-07-20T23:20:50 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="Verify_Download_Page()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_OrderHistory_Transaction_Download@2e554a3b]" name="Verify_Download_Page" duration-ms="7588" started-at="2021-07-20T23:20:56 BDT" finished-at="2021-07-20T23:21:03 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Download_Page -->
+        <test-method status="PASS" signature="Verify_Order_History_Page()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_OrderHistory_Transaction_Download@2e554a3b]" name="Verify_Order_History_Page" duration-ms="7566" started-at="2021-07-20T23:21:03 BDT" finished-at="2021-07-20T23:21:11 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Order_History_Page -->
+        <test-method status="PASS" signature="Verify_Transaction_Page()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_OrderHistory_Transaction_Download@2e554a3b]" name="Verify_Transaction_Page" duration-ms="7576" started-at="2021-07-20T23:21:11 BDT" finished-at="2021-07-20T23:21:18 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Transaction_Page -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_OrderHistory_Transaction_Download@2e554a3b]" name="AfterTest" is-config="true" duration-ms="57" started-at="2021-07-20T23:25:10 BDT" finished-at="2021-07-20T23:25:10 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- pagefactory.com.tests.PagefactoryTests_OrderHistory_Transaction_Download -->
+      <class name="pagefactory.com.tests.PagefactoryTests_Count_Product">
+        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Count_Product@56aaaecd]" name="BeforeTest" is-config="true" duration-ms="2134" started-at="2021-07-20T23:20:44 BDT" finished-at="2021-07-20T23:20:46 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="Verify_CountProduct_After_login()[pri:1, instance:pagefactory.com.tests.PagefactoryTests_Count_Product@56aaaecd]" name="Verify_CountProduct_After_login" duration-ms="11395" started-at="2021-07-20T23:21:56 BDT" finished-at="2021-07-20T23:22:07 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_CountProduct_After_login -->
+        <test-method status="PASS" signature="Verify_CountProduct_Before_login_and_Check_Existing_Of_CountProduct_After_Login()[pri:2, instance:pagefactory.com.tests.PagefactoryTests_Count_Product@56aaaecd]" name="Verify_CountProduct_Before_login_and_Check_Existing_Of_CountProduct_After_Login" duration-ms="12832" started-at="2021-07-20T23:22:07 BDT" finished-at="2021-07-20T23:22:20 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_CountProduct_Before_login_and_Check_Existing_Of_CountProduct_After_Login -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Count_Product@56aaaecd]" name="AfterTest" is-config="true" duration-ms="53" started-at="2021-07-20T23:25:10 BDT" finished-at="2021-07-20T23:25:10 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- pagefactory.com.tests.PagefactoryTests_Count_Product -->
+      <class name="pagefactory.com.tests.PagefactoryTests_AddCart_From_Wishlist">
+        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_AddCart_From_Wishlist@7d42c224]" name="BeforeTest" is-config="true" duration-ms="2091" started-at="2021-07-20T23:20:40 BDT" finished-at="2021-07-20T23:20:42 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="Verify_AddToCartFromWishlist_Before_login()[pri:1, instance:pagefactory.com.tests.PagefactoryTests_AddCart_From_Wishlist@7d42c224]" name="Verify_AddToCartFromWishlist_Before_login" duration-ms="8762" started-at="2021-07-20T23:21:36 BDT" finished-at="2021-07-20T23:21:45 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_AddToCartFromWishlist_Before_login -->
-        <test-method status="PASS" signature="Verify_AddToCartFromWishlist_After_login()[pri:2, instance:pagefactory.com.tests.PagefactoryTests_AddCart_From_Wishlist@1b266842]" name="Verify_AddToCartFromWishlist_After_login" duration-ms="11051" started-at="2021-07-20T23:06:18 BDT" finished-at="2021-07-20T23:06:29 BDT">
+        <test-method status="PASS" signature="Verify_AddToCartFromWishlist_After_login()[pri:2, instance:pagefactory.com.tests.PagefactoryTests_AddCart_From_Wishlist@7d42c224]" name="Verify_AddToCartFromWishlist_After_login" duration-ms="10668" started-at="2021-07-20T23:21:45 BDT" finished-at="2021-07-20T23:21:56 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_AddToCartFromWishlist_After_login -->
-        <test-method status="PASS" signature="AfterTest()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_AddCart_From_Wishlist@1b266842]" name="AfterTest" is-config="true" duration-ms="62" started-at="2021-07-20T23:06:29 BDT" finished-at="2021-07-20T23:06:29 BDT">
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_AddCart_From_Wishlist@7d42c224]" name="AfterTest" is-config="true" duration-ms="44" started-at="2021-07-20T23:25:10 BDT" finished-at="2021-07-20T23:25:10 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterTest -->
       </class> <!-- pagefactory.com.tests.PagefactoryTests_AddCart_From_Wishlist -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="pagefactory.com.tests.PagefactoryTests_Wishlist">
+        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Wishlist@5e01a982]" name="BeforeTest" is-config="true" duration-ms="1675" started-at="2021-07-20T23:20:54 BDT" finished-at="2021-07-20T23:20:56 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="Verify_AddToWishlist_Before_login()[pri:1, instance:pagefactory.com.tests.PagefactoryTests_Wishlist@5e01a982]" name="Verify_AddToWishlist_Before_login" duration-ms="9429" started-at="2021-07-20T23:23:39 BDT" finished-at="2021-07-20T23:23:49 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_AddToWishlist_Before_login -->
+        <test-method status="PASS" signature="Verify_AddToWishlist_After_login()[pri:2, instance:pagefactory.com.tests.PagefactoryTests_Wishlist@5e01a982]" name="Verify_AddToWishlist_After_login" duration-ms="11080" started-at="2021-07-20T23:23:49 BDT" finished-at="2021-07-20T23:24:00 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_AddToWishlist_After_login -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Wishlist@5e01a982]" name="AfterTest" is-config="true" duration-ms="63" started-at="2021-07-20T23:25:11 BDT" finished-at="2021-07-20T23:25:11 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- pagefactory.com.tests.PagefactoryTests_Wishlist -->
+      <class name="pagefactory.com.tests.PagefactoryTests_Reg">
+        <test-method status="PASS" signature="BeforeTest2()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Reg@5ddea849]" name="BeforeTest2" is-config="true" duration-ms="1798" started-at="2021-07-20T23:20:50 BDT" finished-at="2021-07-20T23:20:52 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTest2 -->
+        <test-method status="PASS" signature="Registration_Negative_Blank_all_value()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Reg@5ddea849]" name="Registration_Negative_Blank_all_value" duration-ms="3275" started-at="2021-07-20T23:24:00 BDT" finished-at="2021-07-20T23:24:03 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration_Negative_Blank_all_value -->
+        <test-method status="PASS" signature="Registration_Negative_Click_Yes_Button_with_Invalid_Value()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Reg@5ddea849]" name="Registration_Negative_Click_Yes_Button_with_Invalid_Value" duration-ms="3588" started-at="2021-07-20T23:24:03 BDT" finished-at="2021-07-20T23:24:07 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration_Negative_Click_Yes_Button_with_Invalid_Value -->
+        <test-method status="PASS" signature="Registration_Negative_Different_Password_Repassword()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Reg@5ddea849]" name="Registration_Negative_Different_Password_Repassword" duration-ms="3289" started-at="2021-07-20T23:24:07 BDT" finished-at="2021-07-20T23:24:10 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration_Negative_Different_Password_Repassword -->
+        <test-method status="PASS" signature="Registration_Negative_Invalid_Email()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Reg@5ddea849]" name="Registration_Negative_Invalid_Email" duration-ms="3355" started-at="2021-07-20T23:24:10 BDT" finished-at="2021-07-20T23:24:13 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration_Negative_Invalid_Email -->
+        <test-method status="PASS" signature="Registration_Negative_Invalid_FirstName()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Reg@5ddea849]" name="Registration_Negative_Invalid_FirstName" duration-ms="3301" started-at="2021-07-20T23:24:13 BDT" finished-at="2021-07-20T23:24:17 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration_Negative_Invalid_FirstName -->
+        <test-method status="PASS" signature="Registration_Negative_Invalid_LastName()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Reg@5ddea849]" name="Registration_Negative_Invalid_LastName" duration-ms="3265" started-at="2021-07-20T23:24:17 BDT" finished-at="2021-07-20T23:24:20 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration_Negative_Invalid_LastName -->
+        <test-method status="PASS" signature="Registration_Negative_Invalid_Password()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Reg@5ddea849]" name="Registration_Negative_Invalid_Password" duration-ms="3273" started-at="2021-07-20T23:24:20 BDT" finished-at="2021-07-20T23:24:23 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration_Negative_Invalid_Password -->
+        <test-method status="PASS" signature="Registration_Negative_Invalid_RePassword()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Reg@5ddea849]" name="Registration_Negative_Invalid_RePassword" duration-ms="3351" started-at="2021-07-20T23:24:23 BDT" finished-at="2021-07-20T23:24:27 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration_Negative_Invalid_RePassword -->
+        <test-method status="PASS" signature="Registration_Negative_Invalid_Telephone()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Reg@5ddea849]" name="Registration_Negative_Invalid_Telephone" duration-ms="3270" started-at="2021-07-20T23:24:27 BDT" finished-at="2021-07-20T23:24:30 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration_Negative_Invalid_Telephone -->
+        <test-method status="PASS" signature="Registration_Negative_Invalid_all_value()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Reg@5ddea849]" name="Registration_Negative_Invalid_all_value" duration-ms="3415" started-at="2021-07-20T23:24:30 BDT" finished-at="2021-07-20T23:24:33 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration_Negative_Invalid_all_value -->
+        <test-method status="PASS" signature="Registration_Negative_Without_Click_Agree()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Reg@5ddea849]" name="Registration_Negative_Without_Click_Agree" duration-ms="3155" started-at="2021-07-20T23:24:33 BDT" finished-at="2021-07-20T23:24:36 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration_Negative_Without_Click_Agree -->
+        <test-method status="PASS" signature="Registration_Negative_valid_Email()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Reg@5ddea849]" name="Registration_Negative_valid_Email" duration-ms="3413" started-at="2021-07-20T23:24:36 BDT" finished-at="2021-07-20T23:24:40 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration_Negative_valid_Email -->
+        <test-method status="PASS" signature="Registration_Negative_valid_FirstName()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Reg@5ddea849]" name="Registration_Negative_valid_FirstName" duration-ms="3429" started-at="2021-07-20T23:24:40 BDT" finished-at="2021-07-20T23:24:43 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration_Negative_valid_FirstName -->
+        <test-method status="PASS" signature="Registration_Negative_valid_LastName()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Reg@5ddea849]" name="Registration_Negative_valid_LastName" duration-ms="3403" started-at="2021-07-20T23:24:43 BDT" finished-at="2021-07-20T23:24:47 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration_Negative_valid_LastName -->
+        <test-method status="PASS" signature="Registration_Negative_valid_Password()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Reg@5ddea849]" name="Registration_Negative_valid_Password" duration-ms="3385" started-at="2021-07-20T23:24:47 BDT" finished-at="2021-07-20T23:24:50 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration_Negative_valid_Password -->
+        <test-method status="PASS" signature="Registration_Negative_valid_RePassword()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Reg@5ddea849]" name="Registration_Negative_valid_RePassword" duration-ms="3391" started-at="2021-07-20T23:24:50 BDT" finished-at="2021-07-20T23:24:54 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration_Negative_valid_RePassword -->
+        <test-method status="PASS" signature="Registration_Negative_valid_Telephone()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Reg@5ddea849]" name="Registration_Negative_valid_Telephone" duration-ms="3432" started-at="2021-07-20T23:24:54 BDT" finished-at="2021-07-20T23:24:57 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration_Negative_valid_Telephone -->
+        <test-method status="PASS" signature="Registration_Positive_Click_Yes_Button_with_Valid_Value()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Reg@5ddea849]" name="Registration_Positive_Click_Yes_Button_with_Valid_Value" duration-ms="6630" started-at="2021-07-20T23:24:57 BDT" finished-at="2021-07-20T23:25:04 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration_Positive_Click_Yes_Button_with_Valid_Value -->
+        <test-method status="PASS" signature="Registration_Positive_all_valid_value()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Reg@5ddea849]" name="Registration_Positive_all_valid_value" duration-ms="6539" started-at="2021-07-20T23:25:04 BDT" finished-at="2021-07-20T23:25:10 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration_Positive_all_valid_value -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:pagefactory.com.tests.PagefactoryTests_Reg@5ddea849]" name="AfterTest" is-config="true" duration-ms="64" started-at="2021-07-20T23:25:10 BDT" finished-at="2021-07-20T23:25:10 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- pagefactory.com.tests.PagefactoryTests_Reg -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

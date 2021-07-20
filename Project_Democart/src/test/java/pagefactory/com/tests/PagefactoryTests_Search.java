@@ -30,12 +30,13 @@ public class PagefactoryTests_Search {
 	String invalid_search = RandomStringUtils.randomAlphabetic(8);
 	String blank_search = "";
 	
-	@BeforeSuite
+	@BeforeClass
 	public void BeforeTest() throws IOException {
 		testdata = new TestData();
 		driver.get(testdata.property.getProperty("baseUrl"));
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
+		System.out.println("Start Search");
 		
 	}
 	
@@ -181,7 +182,7 @@ public class PagefactoryTests_Search {
 		loginPage.Logout();
 	}
 	
-	@AfterSuite
+	@AfterClass
 	public void AfterTest() {
 		driver.close();
 	}

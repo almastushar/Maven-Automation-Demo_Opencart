@@ -26,12 +26,13 @@ public class PagefactoryTests_Wishlist {
 	WishlistPage wishPage = new WishlistPage(driver);
 	
 	
-	@BeforeSuite
+	@BeforeClass
 	public void BeforeTest() throws IOException {
 		testdata = new TestData();
 		driver.get(testdata.property.getProperty("baseUrl"));
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
+		System.out.println("Start Wishlist");
 		
 	}
 	
@@ -67,7 +68,7 @@ public class PagefactoryTests_Wishlist {
 		
 	}
 	
-	@AfterSuite
+	@AfterClass
 	public void AfterTest() {
 		driver.close();
 	}
