@@ -21,7 +21,7 @@ import pages.com.demo.opencart.WishlistPage;
 import utils.TestData;
 
 public class PagefactoryTests_AddCart_From_Wishlist {
-	static ChromeOptions options = new ChromeOptions().addArguments("enable-automation --headless ");
+	static ChromeOptions options = new ChromeOptions().addArguments("enable-automation");
 	WebDriver driver = new ChromeDriver(); 
 	/*
 	 * ChromeOptions options = new ChromeOptions();
