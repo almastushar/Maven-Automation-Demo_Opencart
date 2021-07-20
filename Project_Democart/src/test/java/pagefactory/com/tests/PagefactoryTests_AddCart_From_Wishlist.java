@@ -21,11 +21,11 @@ import pages.com.demo.opencart.WishlistPage;
 import utils.TestData;
 
 public class PagefactoryTests_AddCart_From_Wishlist {
-	static ChromeOptions options = new ChromeOptions().addArguments("enable-automation");
+	static ChromeOptions options = new ChromeOptions().addArguments("enable-automation", "--no-sandbox", "enable-features=NetworkServiceInProcess");
 	WebDriver driver = new ChromeDriver(); 
 	/*
 	 * ChromeOptions options = new ChromeOptions();
-	 * options.addArguments("enable-automation");
+	 * options.addArguments("enable-automation", "");
 	 * options.addArguments("--headless");
 	 * options.addArguments("--window-size=1920,1080");
 	 * options.addArguments("--no-sandbox");
@@ -33,6 +33,8 @@ public class PagefactoryTests_AddCart_From_Wishlist {
 	 * options.addArguments("--dns-prefetch-disable");
 	 * options.addArguments("--disable-gpu");
 	 * options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+	 * option.addArguments("enable-features=NetworkServiceInProcess")
+	 * option.addArguments("disable-features=NetworkService")
 	 */
 	static TestData testdata;
 	
