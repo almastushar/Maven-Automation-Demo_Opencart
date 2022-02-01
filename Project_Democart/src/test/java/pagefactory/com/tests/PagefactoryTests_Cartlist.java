@@ -22,12 +22,12 @@ import utils.TestData;
 public class PagefactoryTests_Cartlist {
 	WebDriver driver = new ChromeDriver(); 
 	static TestData testdata;
-	
+
 	HomePage homePage = new HomePage(driver);
 	LoginPage loginPage = new LoginPage(driver);
 	CartPage cartPage = new CartPage(driver);
-	
-	
+
+
 	@BeforeClass
 	public void BeforeTest() throws IOException {
 		testdata = new TestData();
@@ -35,14 +35,14 @@ public class PagefactoryTests_Cartlist {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		System.out.println("Start Cartlist");
-		
+
 	}
-	
+
 
 	@Test(priority = 2)
 	public void Verify_AddToCartlist_After_login() throws IOException {
 		testdata = new TestData();
-		
+
 		homePage.Login();
 		loginPage.Provide_Email(testdata.property.getProperty("validUserEmail"));
 		loginPage.Provide_Password(testdata.property.getProperty("validPassword"));
@@ -53,14 +53,14 @@ public class PagefactoryTests_Cartlist {
 		cartPage.Verify_Cartlist();
 		cartPage.Delete_Cartlist();
 		loginPage.Logout();
-		
+
 	}
-	
-	
+
+
 	@Test(priority = 1)
 	public void Verify_AddToCartlist_Before_login_and_Check_Existing_Of_Cartlist_After_Login() throws IOException {
 		testdata = new TestData();
-		
+
 		homePage.AddToCart();
 		homePage.CartList();
 		cartPage.Verify_Cartlist();
@@ -72,13 +72,13 @@ public class PagefactoryTests_Cartlist {
 		cartPage.Verify_Cartlist();
 		cartPage.Delete_Cartlist();
 		loginPage.Logout();
-		
+
 	}
-	
+
 	@AfterClass
 	public void AfterTest() {
 		driver.close();
 	}
-	
+
 
 }

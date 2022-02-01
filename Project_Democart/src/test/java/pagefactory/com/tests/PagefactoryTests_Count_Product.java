@@ -16,17 +16,17 @@ import pages.com.demo.opencart.LoginPage;
 import utils.TestData;
 
 public class PagefactoryTests_Count_Product {
-	
+
 	WebDriver driver = new ChromeDriver(); 
 	static TestData testdata;
-	
+
 	HomePage homePage = new HomePage(driver);
 	LoginPage loginPage = new LoginPage(driver);
 	CartPage cartPage = new CartPage(driver);
-	
+
 	String quantity = RandomStringUtils.randomNumeric(1, 2);
-	
-	
+
+
 	@BeforeClass
 	public void BeforeTest() throws IOException {
 		testdata = new TestData();
@@ -34,14 +34,14 @@ public class PagefactoryTests_Count_Product {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		System.out.println("Start Count Product");
-		
+
 	}
-	
+
 
 	@Test(priority = 1)
 	public void Verify_CountProduct_After_login() throws IOException {
 		testdata = new TestData();
-		
+
 		homePage.Login();
 		loginPage.Provide_Email(testdata.property.getProperty("validUserEmail"));
 		loginPage.Provide_Password(testdata.property.getProperty("validPassword"));
@@ -57,13 +57,13 @@ public class PagefactoryTests_Count_Product {
 		assertEquals(cartPage.Verify_Count(), quantity);
 		cartPage.Delete_Cartlist();
 		loginPage.Logout();
-		
+
 	}
-	
+
 	@Test(priority = 2)
 	public void Verify_CountProduct_Before_login_and_Check_Existing_Of_CountProduct_After_Login() throws IOException {
 		testdata = new TestData();
-		
+
 		loginPage.Click_HomeBtn();
 		homePage.AddToCart();
 		homePage.CartList();
@@ -80,16 +80,16 @@ public class PagefactoryTests_Count_Product {
 		cartPage.Verify_Cartlist();
 		assertEquals(cartPage.Verify_Count(), quantity);
 		cartPage.Delete_Cartlist();
-		
+
 		loginPage.Logout();
-		
+
 	}
-	
+
 	@AfterClass
 	public void AfterTest() {
 		driver.close();
 	}
-	
-	
+
+
 
 }
