@@ -19,13 +19,13 @@ import pages.com.demo.opencart.LoginPage;
 import utils.TestData;
 
 public class PagefactoryTests_OrderHistory_Transaction_Download {
-	
+
 	WebDriver driver = new ChromeDriver(); 
 	static TestData testdata;
-	
+
 	HomePage homePage = new HomePage(driver);
 	LoginPage loginPage = new LoginPage(driver);
-	
+
 	@BeforeClass
 	public void BeforeTest() throws IOException {
 		testdata = new TestData();
@@ -33,9 +33,9 @@ public class PagefactoryTests_OrderHistory_Transaction_Download {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		System.out.println("Start Order History");
-		
+
 	}
-	
+
 	@Test
 	public void Verify_Order_History_Page() throws IOException {
 		testdata = new TestData();
@@ -47,9 +47,9 @@ public class PagefactoryTests_OrderHistory_Transaction_Download {
 		homePage.Order_History();
 		assertEquals(driver.getTitle(), "Order History");
 		loginPage.Logout();
-		
+
 	}
-	
+
 	@Test
 	public void Verify_Transaction_Page() throws IOException {
 		testdata = new TestData();
@@ -61,9 +61,9 @@ public class PagefactoryTests_OrderHistory_Transaction_Download {
 		homePage.Transactions();
 		assertEquals(driver.getTitle(), "Your Transactions");
 		loginPage.Logout();
-		
+
 	}
-	
+
 	@Test
 	public void Verify_Download_Page() throws IOException {
 		testdata = new TestData();
@@ -75,9 +75,9 @@ public class PagefactoryTests_OrderHistory_Transaction_Download {
 		homePage.Downloads();
 		assertEquals(driver.getTitle(), "Account Downloads");
 		loginPage.Logout();
-		
+
 	}
-	
+
 	@AfterClass
 	public void AfterTest() {
 		driver.close();

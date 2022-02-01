@@ -15,14 +15,14 @@ import pages.com.demo.opencart.RegistrationPage;
 import utils.TestData;
 
 public class PagefactoryTests_Reg {
-    WebDriver driver = new ChromeDriver();
-    static TestData testdata;
-	
+	WebDriver driver = new ChromeDriver();
+	static TestData testdata;
+
 	HomePage homepage = new HomePage(driver);
 	RegistrationPage regPage = new RegistrationPage(driver);
-	
-	
-	
+
+
+
 	String valid_fname = RandomStringUtils.randomAlphabetic(12);
 	String invalid_fname = RandomStringUtils.randomAlphabetic(33, 35);
 	String valid_lname = RandomStringUtils.randomAlphabetic(12);
@@ -36,24 +36,24 @@ public class PagefactoryTests_Reg {
 	String invalid_password = RandomStringUtils.randomNumeric(3);
 	String invalid_repassword = RandomStringUtils.randomAlphanumeric(5);
 
-	
+
 	String blank_fname = "";
 	String blank_lname = "";
 	String blank_email = "";
 	String blank_phone = "";
 	String blank_password = "";
 	String blank_confirmpass = "";
-	
+
 	@BeforeClass
 	public void BeforeTest2() throws IOException {
 		testdata = new TestData();
 		driver.get(testdata.property.getProperty("baseUrl"));
-		 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		 driver.manage().window().maximize();
-		 System.out.println("Start Registration");
-		 
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		System.out.println("Start Registration");
+
 	}
-	
+
 	@Test
 	public void Registration_Positive_all_valid_value() {
 		homepage.Registration();
@@ -65,11 +65,11 @@ public class PagefactoryTests_Reg {
 		regPage.provideConfirmPassword(valid_password);
 		regPage.selectAgree();
 		regPage.selectRegBtn();
-	    assertEquals(driver.getTitle(), "Your Account Has Been Created!");
-	    regPage.Logout();
-	    
+		assertEquals(driver.getTitle(), "Your Account Has Been Created!");
+		regPage.Logout();
+
 	}
-	
+
 	@Test
 	public void Registration_Negative_Invalid_FirstName() {
 		homepage.Registration();
@@ -83,7 +83,7 @@ public class PagefactoryTests_Reg {
 		regPage.selectRegBtn();
 		assertEquals(regPage.verifyFailedFirstName(), "First Name must be between 1 and 32 characters!");
 	}
-	
+
 	@Test
 	public void Registration_Negative_Invalid_LastName() {
 		homepage.Registration();
@@ -97,7 +97,7 @@ public class PagefactoryTests_Reg {
 		regPage.selectRegBtn();
 		assertEquals(regPage.verifyFailedLastName(), "Last Name must be between 1 and 32 characters!");
 	}
-	
+
 	@Test
 	public void Registration_Negative_Invalid_Email() {
 		homepage.Registration();
@@ -111,7 +111,7 @@ public class PagefactoryTests_Reg {
 		regPage.selectRegBtn();
 		//assertEquals(regPage.verifyFailedEmail(), "E-Mail Address does not appear to be valid!");
 	}
-	
+
 	@Test
 	public void Registration_Negative_Invalid_Telephone() {
 		homepage.Registration();
@@ -125,7 +125,7 @@ public class PagefactoryTests_Reg {
 		regPage.selectRegBtn();
 		assertEquals(regPage.verifyFailedTelephone(), "Telephone must be between 3 and 32 characters!");
 	}
-	
+
 	@Test
 	public void Registration_Negative_Invalid_Password() {
 		homepage.Registration();
@@ -139,7 +139,7 @@ public class PagefactoryTests_Reg {
 		regPage.selectRegBtn();
 		assertEquals(regPage.verifyFailedPassword(), "Password must be between 4 and 20 characters!");
 	}
-	
+
 	@Test
 	public void Registration_Negative_Invalid_RePassword() {
 		homepage.Registration();
@@ -153,7 +153,7 @@ public class PagefactoryTests_Reg {
 		regPage.selectRegBtn();
 		assertEquals(regPage.verifyFailedRePassword(), "Password confirmation does not match password!");
 	}
-	
+
 	@Test
 	public void Registration_Negative_valid_FirstName() {
 		homepage.Registration();
@@ -170,9 +170,9 @@ public class PagefactoryTests_Reg {
 		assertEquals(regPage.verifyFailedTelephone(), "Telephone must be between 3 and 32 characters!");
 		assertEquals(regPage.verifyFailedPassword(), "Password must be between 4 and 20 characters!");
 		assertEquals(regPage.verifyFailedRePassword(), "Password confirmation does not match password!");
-		
+
 	}
-	
+
 	@Test
 	public void Registration_Negative_valid_LastName() {
 		homepage.Registration();
@@ -190,7 +190,7 @@ public class PagefactoryTests_Reg {
 		assertEquals(regPage.verifyFailedPassword(), "Password must be between 4 and 20 characters!");
 		assertEquals(regPage.verifyFailedRePassword(), "Password confirmation does not match password!");
 	}
-	
+
 	@Test
 	public void Registration_Negative_valid_Email() {
 		homepage.Registration();
@@ -208,7 +208,7 @@ public class PagefactoryTests_Reg {
 		assertEquals(regPage.verifyFailedPassword(), "Password must be between 4 and 20 characters!");
 		assertEquals(regPage.verifyFailedRePassword(), "Password confirmation does not match password!");
 	}
-	
+
 	@Test
 	public void Registration_Negative_valid_Telephone() {
 		homepage.Registration();
@@ -226,7 +226,7 @@ public class PagefactoryTests_Reg {
 		assertEquals(regPage.verifyFailedPassword(), "Password must be between 4 and 20 characters!");
 		assertEquals(regPage.verifyFailedRePassword(), "Password confirmation does not match password!");
 	}
-	
+
 	@Test
 	public void Registration_Negative_valid_Password() {
 		homepage.Registration();
@@ -244,7 +244,7 @@ public class PagefactoryTests_Reg {
 		assertEquals(regPage.verifyFailedTelephone(), "Telephone must be between 3 and 32 characters!");
 		assertEquals(regPage.verifyFailedRePassword(), "Password confirmation does not match password!");
 	}
-	
+
 	@Test
 	public void Registration_Negative_valid_RePassword() {
 		homepage.Registration();
@@ -263,7 +263,7 @@ public class PagefactoryTests_Reg {
 		assertEquals(regPage.verifyFailedPassword(), "Password must be between 4 and 20 characters!");
 		assertEquals(regPage.verifyFailedRePassword(), "Password confirmation does not match password!");
 	}
-	
+
 	@Test
 	public void Registration_Negative_Invalid_all_value() {
 		homepage.Registration();
@@ -282,7 +282,7 @@ public class PagefactoryTests_Reg {
 		assertEquals(regPage.verifyFailedPassword(), "Password must be between 4 and 20 characters!");
 		assertEquals(regPage.verifyFailedRePassword(), "Password confirmation does not match password!");
 	}
-	
+
 	@Test
 	public void Registration_Negative_Blank_all_value() {
 		homepage.Registration();
@@ -300,7 +300,7 @@ public class PagefactoryTests_Reg {
 		assertEquals(regPage.verifyFailedTelephone(), "Telephone must be between 3 and 32 characters!");
 		assertEquals(regPage.verifyFailedPassword(), "Password must be between 4 and 20 characters!");
 	}
-	
+
 	@Test
 	public void Registration_Negative_Different_Password_Repassword() {
 		homepage.Registration();
@@ -314,7 +314,7 @@ public class PagefactoryTests_Reg {
 		regPage.selectRegBtn();
 		assertEquals(regPage.verifyFailedRePassword(), "Password confirmation does not match password!");
 	}
-	
+
 	@Test
 	public void Registration_Negative_Without_Click_Agree() {
 		homepage.Registration();
@@ -327,7 +327,7 @@ public class PagefactoryTests_Reg {
 		regPage.selectRegBtn();
 		assertEquals(regPage.verifyFailedRegistraion(), "Warning: You must agree to the Privacy Policy!");
 	}
-	
+
 	@Test
 	public void Registration_Positive_Click_Yes_Button_with_Valid_Value() {
 		homepage.Registration();
@@ -341,9 +341,9 @@ public class PagefactoryTests_Reg {
 		regPage.selectAgree();
 		regPage.selectRegBtn();
 		assertEquals(driver.getTitle(), "Your Account Has Been Created!");
-	    regPage.Logout();
+		regPage.Logout();
 	}
-	
+
 	@Test
 	public void Registration_Negative_Click_Yes_Button_with_Invalid_Value() {
 		homepage.Registration();
@@ -363,7 +363,7 @@ public class PagefactoryTests_Reg {
 		assertEquals(regPage.verifyFailedPassword(), "Password must be between 4 and 20 characters!");
 		assertEquals(regPage.verifyFailedRePassword(), "Password confirmation does not match password!");
 	}
-	
+
 	@AfterClass
 	public void AfterTest() {
 		driver.close();

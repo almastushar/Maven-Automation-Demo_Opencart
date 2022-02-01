@@ -20,16 +20,16 @@ import pages.com.demo.opencart.RegistrationPage;
 import utils.TestData;
 
 public class PagefactoryTests_Search {
-	
+
 	WebDriver driver = new ChromeDriver(); 
 	static TestData testdata;
-	
+
 	HomePage homePage = new HomePage(driver);
 	LoginPage loginPage = new LoginPage(driver);
-	
+
 	String invalid_search = RandomStringUtils.randomAlphabetic(8);
 	String blank_search = "";
-	
+
 	@BeforeClass
 	public void BeforeTest() throws IOException {
 		testdata = new TestData();
@@ -37,15 +37,15 @@ public class PagefactoryTests_Search {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		System.out.println("Start Search");
-		
+
 	}
-	
+
 	@Test
 	public void search_valid_value_without_login() throws IOException {
 		testdata = new TestData();
 		homePage.SearchProduct(testdata.property.getProperty("validSearch"));
 		homePage.SearchSubmitButton();
-		
+
 		for (String word : homePage.Verify_Search_Result()) {
 
 			String [] words = word.split("\\s");
@@ -53,20 +53,20 @@ public class PagefactoryTests_Search {
 				if (testdata.property.getProperty("validSearch").equals(words[i])) {
 					assertEquals(words[i], testdata.property.getProperty("validSearch"));
 				}
-				
-				
+
+
 			}
-            
-        }
-		
-		
+
+		}
+
+
 	}
-	
+
 	@Test
 	public void search_invalid_value_without_login() throws IOException {
 		homePage.SearchProduct(invalid_search);
 		homePage.SearchSubmitButton();
-		
+
 		for (String word : homePage.Verify_Search_Result()) {
 
 			String [] words = word.split("\\s");
@@ -74,20 +74,20 @@ public class PagefactoryTests_Search {
 				if (invalid_search.equals(words[i])) {
 					assertEquals(words[i], "");
 				}
-				
-				
+
+
 			}
-            
-        }
-		
-		
+
+		}
+
+
 	}
-	
+
 	@Test
 	public void search_blank_value_without_login() throws IOException {
 		homePage.SearchProduct(blank_search);
 		homePage.SearchSubmitButton();
-		
+
 		for (String word : homePage.Verify_Search_Result()) {
 
 			String [] words = word.split("\\s");
@@ -95,15 +95,15 @@ public class PagefactoryTests_Search {
 				if (blank_search.equals(words[i])) {
 					assertEquals(words[i], "");
 				}
-				
-				
+
+
 			}
-            
-        }
-		
-		
+
+		}
+
+
 	}
-	
+
 	@Test
 	public void search_valid_value_with_login() throws IOException {
 		testdata = new TestData();
@@ -114,7 +114,7 @@ public class PagefactoryTests_Search {
 		assertEquals(driver.getTitle(), "My Account");
 		homePage.SearchProduct(testdata.property.getProperty("validSearch"));
 		homePage.SearchSubmitButton();
-		
+
 		for (String word : homePage.Verify_Search_Result()) {
 
 			String [] words = word.split("\\s");
@@ -122,14 +122,14 @@ public class PagefactoryTests_Search {
 				if (testdata.property.getProperty("validSearch").equals(words[i])) {
 					assertEquals(words[i], testdata.property.getProperty("validSearch"));
 				}
-				
-				
+
+
 			}
-            
-        }
+
+		}
 		loginPage.Logout();
 	}
-	
+
 	@Test
 	public void search_invalid_value_with_login() throws IOException {
 		testdata = new TestData();
@@ -140,7 +140,7 @@ public class PagefactoryTests_Search {
 		assertEquals(driver.getTitle(), "My Account");
 		homePage.SearchProduct(invalid_search);
 		homePage.SearchSubmitButton();
-		
+
 		for (String word : homePage.Verify_Search_Result()) {
 
 			String [] words = word.split("\\s");
@@ -148,14 +148,14 @@ public class PagefactoryTests_Search {
 				if (invalid_search.equals(words[i])) {
 					assertEquals(words[i], "");
 				}
-				
-				
+
+
 			}
-            
-        }
+
+		}
 		loginPage.Logout();
 	}
-	
+
 	@Test
 	public void search_blank_value_with_login() throws IOException {
 		testdata = new TestData();
@@ -166,7 +166,7 @@ public class PagefactoryTests_Search {
 		assertEquals(driver.getTitle(), "My Account");
 		homePage.SearchProduct(blank_search);
 		homePage.SearchSubmitButton();
-		
+
 		for (String word : homePage.Verify_Search_Result()) {
 
 			String [] words = word.split("\\s");
@@ -174,14 +174,14 @@ public class PagefactoryTests_Search {
 				if (blank_search.equals(words[i])) {
 					assertEquals(words[i], "");
 				}
-				
-				
+
+
 			}
-            
-        }
+
+		}
 		loginPage.Logout();
 	}
-	
+
 	@AfterClass
 	public void AfterTest() {
 		driver.close();
